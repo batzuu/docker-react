@@ -10,6 +10,6 @@ script:
 
 deploy:
   provider: gae
-  keyfile: cs.json.enc
+  keyfile: cs.json
   project: docker-flow
   on: main
