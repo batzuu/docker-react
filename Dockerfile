@@ -10,5 +10,4 @@ RUN chown -R node.node /home/node
 RUN npm run build
 
 FROM nginx
-EXPOSE 8080
 COPY --from=builder /home/node/build /usr/share/nginx/html
