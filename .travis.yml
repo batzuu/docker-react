@@ -11,4 +11,4 @@ deploy:
   project: docker-flow
   edge: true
   install_sdk: true
-  on: main
+  on: only-deploy
