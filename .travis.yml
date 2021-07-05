@@ -4,9 +4,6 @@ services:
 before_install:
 - openssl aes-256-cbc -K $encrypted_65b05ac2d55e_key -iv $encrypted_65b05ac2d55e_iv
   -in cs.json.enc -out cs.json -d
-- docker build -t batzuu/docker-react -f Dockerfile.dev .
-script:
-- docker run -e CI=true batzuu/docker-react npm run test -- --coverage
 
 deploy:
   provider: gae
