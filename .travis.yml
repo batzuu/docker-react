@@ -10,7 +10,8 @@ script:
 
 deploy:
   provider: gae
-  script: bash gcloud  components update --version 330.0.0
   keyfile: cs.json
   project: docker-flow
+  edge: true
+  install_sdk: true
   on: main
